@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: elliotjhmazes 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: elliotjhmazes 
+    spec:
+      containers:
+        - name: elliotjhmazes 
+          image: elliotreg.azurecr.io/elliotjhmazes 
+          ports:
+          - containerPort: 8080
